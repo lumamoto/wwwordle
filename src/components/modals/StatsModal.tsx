@@ -1,5 +1,5 @@
 import Countdown from 'react-countdown'
-import { ShareIcon } from '@heroicons/react/outline'
+import { ShareIcon, MusicNoteIcon } from '@heroicons/react/outline'
 import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
@@ -66,6 +66,16 @@ export const StatsModal = ({
       isOpen={isOpen}
       handleClose={handleClose}
     >
+      <a href="https://open.spotify.com/artist/1VQ8riQ31zVHtlxiCC9EZE?si=L0dgysRIRMKiDiwUgrdiVg" target="_blank" rel="noreferrer">
+        <button
+          type="button"
+          className="inline-flex justify-center items-center text-center mt-2 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+        >
+          <MusicNoteIcon className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white" />
+          Listen to Will Wood on Spotify
+        </button>
+      </a>
+      <hr className="mt-4 mb-4 border-gray-500" />
       <StatBar gameStats={gameStats} />
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT}
