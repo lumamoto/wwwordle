@@ -1,8 +1,10 @@
-# React Wordle
+# Will Wood Wordle 🐀
 
-This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
+Will Wood Wordle (a.k.a. WWWordle) is a fork from [this Wordle clone](https://github.com/cwackerfuss/react-wordle). 
+* Built with React, Typescript, and Tailwind.
+* Hosted with [Linode](https://www.linode.com/).
 
-[**Try out the demo!**](https://reactle.vercel.app/)
+[**Play it here!**](http://45.56.82.31/)
 
 ## Build and run
 
@@ -34,4 +36,8 @@ $> docker build --target=prod -t reactle:prod -f docker/Dockerfile .
 $> docker run -d -p 80:8080  --name reactle-prod reactle:prod
 ```
 
-Open [http://localhost](http://localhost) in browser.
+### To stop and remove prod container:
+```bash
+$> docker stop reactle-prod
+$> docker rm reactle-prod
+```
