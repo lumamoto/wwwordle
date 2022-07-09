@@ -51,7 +51,7 @@ def clean_text():
         word = word.replace("embed", "")
         word = word.replace("lyrics", "")
         word = word.replace("\u0435", "e") # Special character
-        if word.isalpha(): # Remove punctuation
+        if word.isalpha() and word != "thats": # Ignore words with punctuation and "thats"
             clean_set.add(word)
     
     clean_text = open("clean.txt", "w")
@@ -117,7 +117,7 @@ def create_validGuesses(words):
 
 def main():
     artists = ["Will Wood", "Will Wood and the Tapeworms"]
-    get_lyrics(artists)
+    # get_lyrics(artists)
     clean_text()
     word_dict = create_dict()
     words = word_dict[MIN_WORD_LENGTH-1][1]
