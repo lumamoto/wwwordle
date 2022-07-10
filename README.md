@@ -13,7 +13,7 @@ Will Wood Wordle (a.k.a. WWWordle) is a fork from [this Wordle clone](https://gi
 Clone the repository and perform the following command line actions:
 
 ```bash
-$> cd react-wordle
+$> cd wwwordle
 $> npm install
 $> npm run start
 ```
