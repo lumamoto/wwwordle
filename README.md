@@ -2,9 +2,9 @@
 
 Will Wood Wordle (a.k.a. WWWordle) is a fork from [this Wordle clone](https://github.com/cwackerfuss/react-wordle). 
 * Built with React, Typescript, and Tailwind.
-* Hosted with [Linode](https://www.linode.com/).
+* Originally hosted with [Linode](https://www.linode.com/), now with [Netlify](https://www.netlify.com/).
 
-[**Play it here!**](http://45.56.82.31/)
+[**Play it here!**](https://wwwordle.netlify.app/)
 
 ## Build and run
 
